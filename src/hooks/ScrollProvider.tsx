@@ -29,7 +29,7 @@ const ScrollProvider = ({ children }: ScrollProviderProps) => {
     });
 
     lenisRef.current = lenis;
-    (window as any).__lenis = lenis;
+    (window as unknown as { __lenis: Lenis }).__lenis = lenis;
 
     let frame: number;
     const raf = (time: number) => {

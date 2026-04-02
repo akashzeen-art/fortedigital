@@ -10,7 +10,7 @@ const Nav = () => {
     const el = document.getElementById(id);
     if (!el) return;
     // Use Lenis if available, otherwise fallback
-    const lenis = (window as any).__lenis;
+    const lenis = (window as { __lenis?: { scrollTo: (el: HTMLElement, options: { offset: number; duration: number }) => void } }).__lenis;
     if (lenis) {
       lenis.scrollTo(el, { offset: -64, duration: 1.2 });
     } else {

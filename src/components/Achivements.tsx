@@ -2,18 +2,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Image from "next/image";
-
-const companies = [
-  "/company/ibm.svg",
-  "/company/delta.svg",
-  "/company/mc-donlad.svg",
-  "/company/clear-street.svg",
-  "/company/calme.svg",
-  "/company/double-circle.svg",
-  "/company/unileaver.svg",
-  "/company/nanigator.svg",
-];
 
 const Achievements: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);

@@ -1,9 +1,8 @@
 "use client";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Image from "next/image";
-
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const services: Service[] = [
   {
@@ -118,7 +117,7 @@ const Card: React.FC<Service> = ({
   title,
   description,
   media,
-  services,
+  services: _services,
 }) => {
   return (
     <div className="sticky top-16 left-0 bg-background  h-[calc(100vh-4rem)] flex flex-col lg:flex-row justify-between my-5 p-2 md:p-4 overflow-hidden">

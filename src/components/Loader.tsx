@@ -48,7 +48,7 @@ const Loader = () => {
 
       return () => clearTimeout(timeout);
     }
-  }, [index]);
+  }, [index]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (done) return null; // fully unmount after animation
 

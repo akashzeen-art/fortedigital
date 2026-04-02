@@ -1,8 +1,6 @@
 "use client";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Image from "next/image";
-
 import React, { useEffect, useRef } from "react";
 
 const testimonials = [
