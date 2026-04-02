@@ -117,6 +117,7 @@ const Card: React.FC<Service> = ({
   title,
   description,
   media,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   services: _services,
 }) => {
   return (
