@@ -169,7 +169,7 @@ const Hero = () => {
     >
       {/* First block */}
       <div className="md:ml-[-10%] lg:ml-[-30%] text-center md:text-left flex flex-col-reverse md:flex-row gap-5 items-center">
-        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-aboreto">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-aboreto whitespace-nowrap">
           {"FORTE".split("").map((char, ci) => (
             <span
               key={ci}
@@ -193,7 +193,7 @@ const Hero = () => {
       </div>
 
       {/* Second block */}
-      <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-aboreto text-gray-400">
+      <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-aboreto text-gray-400 whitespace-nowrap">
         {"DIGITAL".split("").map((char, ci) => (
           <span
             key={ci}
@@ -216,7 +216,7 @@ const Hero = () => {
         >
           {/* AI-driven digital experiences */}
         </p>
-        <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-aboreto">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-aboreto whitespace-nowrap">
           {"Solutions".split("").map((char, ci) => (
             <span
               key={ci}
