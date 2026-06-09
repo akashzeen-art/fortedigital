@@ -69,16 +69,10 @@ const Footer = () => {
           <p className="font-medium text-black">Socials</p>
           <ul className="space-y-1">
             <li>
-              <a href="#">Instagram</a>
+              <a href="https://x.com/Forte_llp" target="_blank" rel="noopener noreferrer">Twitter</a>
             </li>
             <li>
-              <a href="#">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#">Twitter</a>
-            </li>
-            <li>
-              <a href="#">Facebook</a>
+              <a href="https://www.linkedin.com/company/130913930" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </li>
           </ul>
         </div>

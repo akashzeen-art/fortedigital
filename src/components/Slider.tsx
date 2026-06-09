@@ -3,13 +3,14 @@ import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 
 const images = [
-  "https://randomuser.me/api/portraits/men/32.jpg",
-  "https://randomuser.me/api/portraits/women/44.jpg",
-  "https://randomuser.me/api/portraits/men/65.jpg",
-  "https://randomuser.me/api/portraits/women/68.jpg",
-  "https://randomuser.me/api/portraits/men/12.jpg",
-  "https://randomuser.me/api/portraits/women/21.jpg",
-  "https://randomuser.me/api/portraits/men/77.jpg",
+  "/imgs/1.jpeg",
+  "/imgs/2.jpeg",
+  "/imgs/3.jpeg",
+  "/imgs/4.jpeg",
+  "/imgs/5.jpeg",
+  "/imgs/6.jpeg",
+  "/imgs/7.jpeg",
+  "/imgs/8.jpeg",
 ];
 
 const Slider = () => {
@@ -73,7 +74,7 @@ const Slider = () => {
             alt=""
             width={1920} // required but irrelevant
             height={1080}
-            className="h-[350px] md:h-[450px] object-cover"
+            className="h-[350px] md:h-[450px] w-[300px] md:w-[400px] object-cover shrink-0"
             draggable={false}
           />
         ))}
