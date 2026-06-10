@@ -125,7 +125,7 @@ const Card: React.FC<Service> = ({
       {/* Right: text + video */}
       <div className="flex-[0.7] md:flex-[0.55] flex flex-col justify-between items-start gap-3 -mt-4 md:mt-0 lg:gap-3 overflow-hidden">
 
-        {/* Scrollable text — on mobile fixed height to leave room for video */}
+        {/* Scrollable text */}
         <div
           ref={textRef}
           className="flex flex-col gap-3 overflow-y-auto hide-scrollbar w-full"
@@ -146,7 +146,7 @@ const Card: React.FC<Service> = ({
             ))}
         </div>
 
-        {/* Video — always visible, fixed height */}
+        {/* Video — always visible at bottom */}
         <div className="w-full shrink-0">
           {media.type === "image" ? (
             <Image
@@ -169,7 +169,6 @@ const Card: React.FC<Service> = ({
         </div>
 
       </div>
-
     </div>
   );
 };
