@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Aboreto } from "next/font/google";
 import "./globals.css";
 import ScrollProvider from "@/hooks/ScrollProvider";
+import ScrollToTop from "@/components/ScrollToTop";
 
 // Inter
 const inter = Inter({
@@ -36,8 +37,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${aboreto.variable} antialiased`}>
         <ScrollProvider>
-
-        {children}
+          <ScrollToTop />
+          {children}
         </ScrollProvider>
       </body>
     </html>

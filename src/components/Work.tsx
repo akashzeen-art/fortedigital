@@ -117,19 +117,19 @@ const Card: React.FC<Service> = ({
     <div className="sticky top-16 left-0 bg-background h-[calc(100vh-4rem)] flex flex-col lg:flex-row justify-between my-5 p-2 md:p-4 overflow-hidden">
 
       {/* Left: number + title */}
-      <div className="flex-[0.3] md:flex-[0.4] flex flex-row justify-between items-start p-2 pb-0 md:pb-2">
+      <div className="flex-[0.3] md:flex-[0.4] flex flex-row items-start gap-20 p-2 pb-0 md:pb-2">
         <h2 className="text-7xl md:text-9xl font-medium">{id}</h2>
         <h4 className="text-xl">{title}</h4>
       </div>
 
       {/* Right: text + video */}
-      <div className="flex-[0.7] md:flex-[0.55] flex flex-col justify-between items-start gap-3 -mt-4 md:mt-0 lg:gap-3 overflow-hidden">
+      <div className="flex-[0.7] md:flex-[0.65] flex flex-col justify-between items-start gap-3 -mt-4 md:mt-0 lg:gap-3 overflow-hidden">
 
         {/* Scrollable text */}
         <div
           ref={textRef}
           className="flex flex-col gap-3 overflow-y-auto hide-scrollbar w-full"
-          style={{ maxHeight: "calc(100vh - 30rem)" }}
+          style={{ maxHeight: "calc(100vh - 22rem)" }}
         >
           <p className="text-xl sm:text-2xl lg:text-3xl font-semibold">{description}</p>
           {subDescription && (
