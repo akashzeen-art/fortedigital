@@ -42,10 +42,10 @@ const About = () => {
   return (
     <div ref={containerRef} className="min-h-screen p-4 lg:p-10">
       {/* heading */}
-      <div className="mt-10">
-        <h2 className="text-3xl lg:text-4xl max-w-[950px]">
-          <span className="inline-block text-xl font-medium -translate-y-5 mr-20 lg:mr-[400px] overflow-hidden title">
-            <span className="block">WHO WE ARE</span>
+      <div className="mt-10 w-full">
+        <h2 className="text-3xl lg:text-4xl w-full">
+          <span className="inline-block text-2xl md:text-3xl font-medium -translate-y-5 mr-20 lg:mr-[400px] overflow-hidden title">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-400 font-semibold">WHO WE ARE</span>
           </span>
           <span className="bio hidden md:inline">
             {bioText.split(" ").map((word, idx) => (
@@ -55,7 +55,7 @@ const About = () => {
             ))}
           </span>
         </h2>
-        <div className="text-base mt-4 md:hidden">
+        <div className="text-base mt-4 md:hidden w-full">
           <span className="bio">
             {bioText.split(" ").map((word, idx) => (
               <p key={idx} className="inline-block mr-2 overflow-hidden">
@@ -67,6 +67,7 @@ const About = () => {
       </div>
       {/* img-slider  */}
       <Slider />
+      <div className="mt-16" />
     </div>
   );
 };

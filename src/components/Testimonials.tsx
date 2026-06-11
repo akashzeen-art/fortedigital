@@ -80,14 +80,8 @@ const Testimonials = () => {
         <h2 className="text-3xl max-w-[950px] overflow-hidden Testimonials">
           <span className="block">Testimonials</span>
         </h2>
-        <p className="max-w-[280px] md:max-w-sm text-sm leading-[1] text-gray-600">
-          {"Our partners and clients across MEA trust Forte Digital to deliver scalable, compliant, and high-converting digital solutions every time."
-            .split(" ")
-            .map((word, idx) => (
-              <span key={idx} className="inline-block overflow-hidden mr-1">
-                <span className="block">{word}</span>
-              </span>
-            ))}
+        <p className="flex-1 text-base md:text-xl leading-relaxed text-gray-600">
+          {"Our partners and clients across MEA trust Forte Digital to deliver scalable, compliant, and high-converting digital solutions every time."}
         </p>
       </div>
 

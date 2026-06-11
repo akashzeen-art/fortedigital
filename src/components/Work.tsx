@@ -114,24 +114,24 @@ const Card: React.FC<Service> = ({
   }, []);
 
   return (
-    <div className="sticky top-16 left-0 bg-background h-[calc(100vh-4rem)] flex flex-col lg:flex-row justify-between my-5 p-2 md:p-4 overflow-hidden">
+    <div className="sticky top-16 left-0 bg-background h-[calc(100vh-4rem)] flex flex-col my-5 p-2 md:p-4 overflow-hidden">
 
-      {/* Left: number + title */}
-      <div className="flex-[0.3] md:flex-[0.4] flex flex-row items-start gap-20 p-2 pb-0 md:pb-2">
-        <h2 className="text-7xl md:text-9xl font-medium">{id}</h2>
-        <h4 className="text-xl">{title}</h4>
+      {/* Top row: number + title badge + description */}
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pb-4 border-b border-gray-200">
+        <h2 className="text-7xl md:text-9xl font-medium leading-none shrink-0">{id}</h2>
+        <h4 className="text-xl font-bold bg-black text-white px-6 py-2 rounded mx-auto lg:mx-0">{title}</h4>
+        <p className="text-lg sm:text-xl lg:text-2xl font-semibold lg:whitespace-nowrap shrink-0">{description}</p>
       </div>
 
-      {/* Right: text + video */}
-      <div className="flex-[0.7] md:flex-[0.65] flex flex-col justify-between items-start gap-3 -mt-4 md:mt-0 lg:gap-3 overflow-hidden">
+      {/* Bottom: text + video */}
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-6 flex-1 mt-4 overflow-hidden">
 
         {/* Scrollable text */}
         <div
           ref={textRef}
-          className="flex flex-col gap-3 overflow-y-auto hide-scrollbar w-full"
-          style={{ maxHeight: "calc(100vh - 22rem)" }}
+          className="flex flex-col gap-3 overflow-y-auto hide-scrollbar flex-1"
+          style={{ maxHeight: "calc(100vh - 24rem)" }}
         >
-          <p className="text-xl sm:text-2xl lg:text-3xl font-semibold">{description}</p>
           {subDescription && (
             <p className="text-sm sm:text-base lg:text-lg text-[#5a6a85]">{subDescription}</p>
           )}
@@ -146,8 +146,8 @@ const Card: React.FC<Service> = ({
             ))}
         </div>
 
-        {/* Video — always visible at bottom */}
-        <div className="w-full shrink-0">
+        {/* Video */}
+        <div className="shrink-0">
           {media.type === "image" ? (
             <Image
               src={media.url}

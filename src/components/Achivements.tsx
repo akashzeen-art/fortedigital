@@ -74,66 +74,42 @@ const Achievements: React.FC = () => {
       ref={containerRef}
       className="min-h-fit lg:min-h-screen p-4 lg:p-10 overflow-hidden "
     >
-      <div className="flex flex-col md:flex-row md:justify-between md:items-end">
-        <div className="flex-1">
-          <h2 className="text-3xl overflow-hidden">
-            <span className="block achievements-text">Global Partners</span>
+      <div>
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold overflow-hidden shrink-0">
+            <span className="block achievements-text text-transparent bg-clip-text bg-gradient-to-r from-black via-gray-600 to-gray-400 w-fit">Global Partners</span>
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 mt-16 md:mt-[60px] gap-3 md:gap-6">
-            {["Zain Group", "Digicel Group", "Ooredoo Group", "Amazon Web Services", "Hostinger", "Etisalat", "Hutch", "PayU", "NextGen", "2000 Charge", "One Click", "HDFC"].map((partner, idx) => (
-              <span key={idx} className="achievements-text text-sm font-medium border border-gray-300 rounded-full px-4 py-2 text-center">
-                {partner}
-              </span>
-            ))}
-          </div>
+          <p className="text-lg md:text-xl achievements-text md:max-w-[55%] leading-relaxed">
+            {`We work with leading telecom operators, global brands, and digital platforms across MEA and beyond. Our performance-driven ecosystem connects advertisers, publishers, and operators to deliver measurable results at scale.`}
+          </p>
         </div>
-        <div className="flex-1 flex flex-col mt-5">
-          <div className="text-sm overflow-hidden">
-            {`We work with leading telecom operators, global brands, and digital platforms across MEA and beyond. Our performance-driven ecosystem connects advertisers, publishers, and operators to deliver measurable results at scale.`
-              .split(" ")
-              .map((ch, idx) => (
-                <p key={idx} className="inline-block mr-2 overflow-hidden leading-[0.9]">
-                  <span className="block achievements-text">{ch}</span>
-                </p>
-              ))}
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 mt-6 gap-3 md:gap-6">
-            {["ICICI", "Traffic Company", "Propellor Ads", "Golden Goose", "Google India", "Meta Business", "TeleCMI", "Zoho Business", "Epic Company", "WT Event", "IFX", "IAMAI"].map((partner, idx) => (
-              <span key={idx} className="achievements-text text-sm font-medium border border-gray-300 rounded-full px-4 py-2 text-center">
-                {partner}
-              </span>
-            ))}
-          </div>
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          {["Zain Group", "Digicel Group", "Ooredoo Group", "Amazon Web Services", "Hostinger", "Etisalat", "Hutch", "PayU", "NextGen", "2000 Charge", "One Click", "HDFC", "ICICI", "Traffic Company", "Propellor Ads", "Golden Goose", "Google India", "Meta Business", "TeleCMI", "Zoho Business", "Epic Company", "WT Event", "IFX", "IAMAI"].map((partner, idx) => (
+            <span key={idx} className="achievements-text text-sm font-medium border border-gray-300 rounded-full px-4 py-2 text-center">
+              {partner}
+            </span>
+          ))}
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row mt-12 md:mt-20 overflow-hidden ">
-        <div className="flex flex-col overflow-hidden ">
-          <h5 className="text-lg -mb-3 ml-2 overflow-hidden">
+      <div className="flex flex-col md:flex-row mt-12 md:mt-20 gap-8 md:gap-16">
+        <div className="flex flex-col shrink-0">
+          <h5 className="text-base font-medium text-gray-500 overflow-hidden">
             <span className="achievements-text">Years of expertise</span>
           </h5>
           <h2
             ref={numberRef}
-            className="text-8xl md:text-[9rem] font-bold tracking-tight overflow-hidden "
-            style={{ minWidth: "6ch" }}
+            className="text-8xl md:text-[9rem] font-bold tracking-tight overflow-hidden"
+            style={{ minWidth: "4ch" }}
           >
             0
           </h2>
         </div>
-        <h4 className=" text-sm mt-5 max-w-xs md:max-w-md ml-auto overflow-hidden">
-          <span className="achievements-text">
-            {`We are driven by agility, innovation, and accountability—constantly adapting to evolving digital ecosystems while delivering scalable and profitable solutions. At our core, we are not just service providers; we are growth partners—building sustainable digital businesses and unlocking new revenue streams across markets.`
-              .split(" ")
-              .map((ch, idx) => (
-                <p
-                  key={idx}
-                  className="inline-block mr-2  overflow-hidden leading-[0.9]"
-                >
-                  <span className="block achievements-text  ">{ch}</span>
-                </p>
-              ))}
-          </span>
-        </h4>
+        <div className="flex-1 flex items-center">
+          <p className="achievements-text text-lg md:text-2xl leading-relaxed text-justify w-full">
+            {`We are driven by agility, innovation, and accountability—constantly adapting to evolving digital ecosystems while delivering scalable and profitable solutions. At our core, we are not just service providers; we are growth partners—building sustainable digital businesses and unlocking new revenue streams across markets.`}
+          </p>
+        </div>
       </div>
     </div>
   );

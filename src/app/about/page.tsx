@@ -47,7 +47,7 @@ export default function AboutPage() {
 
         {/* Vision Full-Width Banner */}
         <section className="px-6 md:px-16 lg:px-32 py-16 bg-[#111] text-white">
-          <span className="text-xs uppercase tracking-widest text-[#5a6a85] font-medium">Vision</span>
+          <span className="text-lg md:text-2xl uppercase tracking-widest font-bold bg-white text-[#111] px-4 py-1 rounded">Vision</span>
           <p className="text-2xl md:text-4xl lg:text-5xl font-medium mt-4 max-w-4xl leading-snug">
             Empowering Digital Lives&nbsp;•&nbsp;Inspiring Everyday Experiences&nbsp;•&nbsp;Shaping the Future.
           </p>
