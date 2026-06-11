@@ -45,7 +45,7 @@ const About = () => {
       <div className="mt-10">
         <h2 className="text-3xl lg:text-4xl max-w-[950px]">
           <span className="inline-block text-xl font-medium -translate-y-5 mr-20 lg:mr-[400px] overflow-hidden title">
-            <span className="block">Who We Are</span>
+            <span className="block">WHO WE ARE</span>
           </span>
           <span className="bio hidden md:inline">
             {bioText.split(" ").map((word, idx) => (
@@ -55,7 +55,7 @@ const About = () => {
             ))}
           </span>
         </h2>
-        <div className="text-2xl mt-4 md:hidden">
+        <div className="text-base mt-4 md:hidden">
           <span className="bio">
             {bioText.split(" ").map((word, idx) => (
               <p key={idx} className="inline-block mr-2 overflow-hidden">
