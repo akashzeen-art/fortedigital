@@ -74,30 +74,33 @@ const Achievements: React.FC = () => {
       ref={containerRef}
       className="min-h-fit lg:min-h-screen p-4 lg:p-10 overflow-hidden "
     >
-      <div className="flex flex-col md:flex-row md:justify-between">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-end">
         <div className="flex-1">
-          <h2 className=" text-3xl overflow-hidden">
+          <h2 className="text-3xl overflow-hidden">
             <span className="block achievements-text">Global Partners</span>
           </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 mt-16 md:mt-[60px] gap-3 md:gap-6">
+            {["Zain Group", "Digicel Group", "Ooredoo Group", "Amazon Web Services", "Hostinger", "Etisalat", "Hutch", "PayU", "NextGen", "2000 Charge", "One Click", "HDFC"].map((partner, idx) => (
+              <span key={idx} className="achievements-text text-sm font-medium border border-gray-300 rounded-full px-4 py-2 text-center">
+                {partner}
+              </span>
+            ))}
+          </div>
         </div>
         <div className="flex-1 flex flex-col mt-5">
-          <div className="text-sm overflow-hidden ">
+          <div className="text-sm overflow-hidden">
             {`We work with leading telecom operators, global brands, and digital platforms across MEA and beyond. Our performance-driven ecosystem connects advertisers, publishers, and operators to deliver measurable results at scale.`
               .split(" ")
               .map((ch, idx) => (
-                <p
-                  key={idx}
-                  className="inline-block mr-2  overflow-hidden leading-[0.9] "
-                >
-                  <span className="block achievements-text ">{ch}</span>
+                <p key={idx} className="inline-block mr-2 overflow-hidden leading-[0.9]">
+                  <span className="block achievements-text">{ch}</span>
                 </p>
               ))}
           </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 mt-10 gap-3 md:gap-6">
-            {["UAE", "Saudi Arabia", "Qatar", "Kuwait", "Nigeria", "Kenya", "South Africa", "Ghana", "Egypt", "Iraq"].map((market, idx) => (
+          <div className="grid grid-cols-2 sm:grid-cols-3 mt-6 gap-3 md:gap-6">
+            {["ICICI", "Traffic Company", "Propellor Ads", "Golden Goose", "Google India", "Meta Business", "TeleCMI", "Zoho Business", "Epic Company", "WT Event", "IFX", "IAMAI"].map((partner, idx) => (
               <span key={idx} className="achievements-text text-sm font-medium border border-gray-300 rounded-full px-4 py-2 text-center">
-                {market}
+                {partner}
               </span>
             ))}
           </div>
@@ -119,7 +122,7 @@ const Achievements: React.FC = () => {
         </div>
         <h4 className=" text-sm mt-5 max-w-xs md:max-w-md ml-auto overflow-hidden">
           <span className="achievements-text">
-            {`Over 12 years of telecom and MVAS expertise. Strong global presence across MEA. Performance-driven affiliate ecosystem with compliance-focused operations and scalable, innovative solutions.`
+            {`We are driven by agility, innovation, and accountability—constantly adapting to evolving digital ecosystems while delivering scalable and profitable solutions. At our core, we are not just service providers; we are growth partners—building sustainable digital businesses and unlocking new revenue streams across markets.`
               .split(" ")
               .map((ch, idx) => (
                 <p
