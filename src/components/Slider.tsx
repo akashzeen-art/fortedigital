@@ -3,14 +3,14 @@ import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 
 const images = [
-  "/imgs/1.jpeg",
-  "/imgs/2.jpeg",
-  "/imgs/3.jpeg",
-  "/imgs/4.jpeg",
-  "/imgs/5.jpeg",
-  "/imgs/6.jpeg",
-  "/imgs/7.jpeg",
-  "/imgs/8.jpeg",
+  { src: "/imgs/1.jpeg", name: "Neha Gupta", role: "Marketing Manager" },
+  { src: "/imgs/2.jpeg", name: "Rahul Sharma", role: "Sr Tech" },
+  { src: "/imgs/3.jpeg", name: "Vikram Singh", role: "Jr Tech" },
+  { src: "/imgs/4.jpeg", name: "Karan Malhotra", role: "Sr Marketing Manager" },
+  { src: "/imgs/5.jpeg", name: "Priyanjali S", role: "Marketing Manager" },
+  { src: "/imgs/6.jpeg", name: "Priya Gupta", role: "Marketing Executive" },
+  { src: "/imgs/7.jpeg", name: "Nitika Agarwal", role: "Sr Legal Advisor" },
+  { src: "/imgs/8.jpeg", name: "Arjun Mehta", role: "Head of Tech" },
 ];
 
 const Slider = () => {
@@ -67,16 +67,21 @@ const Slider = () => {
         onMouseDown={onMouseDown}
         className="flex gap-2 pl-32 pr-10 mt-16 overflow-x-auto cursor-none select-none hide-scrollbar"
       >
-        {images.map((path, idx) => (
-          <Image
-            src={path}
-            key={idx}
-            alt=""
-            width={1920} // required but irrelevant
-            height={1080}
-            className="h-[350px] md:h-[450px] w-[300px] md:w-[400px] object-cover shrink-0"
-            draggable={false}
-          />
+        {images.map((item, idx) => (
+          <div key={idx} className="shrink-0 flex flex-col">
+            <Image
+              src={item.src}
+              alt={item.name}
+              width={1920}
+              height={1080}
+              className="h-[350px] md:h-[450px] w-[300px] md:w-[400px] object-cover"
+              draggable={false}
+            />
+            <div className="mt-2 px-1">
+              <p className="text-sm font-semibold text-black">{item.name}</p>
+              <p className="text-xs text-gray-500">{item.role}</p>
+            </div>
+          </div>
         ))}
       </div>
 
