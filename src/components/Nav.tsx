@@ -35,9 +35,9 @@ const Nav = () => {
       <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
         <li><button onClick={() => navigateTo("home")} className="hover:opacity-70 transition-opacity">Home</button></li>
         <li><button onClick={() => router.push("/about")} className="hover:opacity-70 transition-opacity">About Us</button></li>
-        <li><button onClick={() => navigateTo("services")} className="hover:opacity-70 transition-opacity">Services</button></li>
+        <li><button onClick={() => router.push("/services")} className="hover:opacity-70 transition-opacity">Services</button></li>
         <li>
-          <button onClick={() => navigateTo("contact")} className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
+          <button onClick={() => router.push("/contact")} className="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
             Contact
           </button>
         </li>
@@ -59,8 +59,8 @@ const Nav = () => {
         <ul className="absolute top-16 left-0 w-full bg-black flex flex-col items-start gap-4 px-6 py-6 text-sm font-medium md:hidden">
           <li><button onClick={() => navigateTo("home")}>Home</button></li>
           <li><button onClick={() => router.push("/about")}>About Us</button></li>
-          <li><button onClick={() => navigateTo("services")}>Services</button></li>
-          <li><button onClick={() => navigateTo("contact")}>Contact</button></li>
+          <li><button onClick={() => router.push("/services")}>Services</button></li>
+          <li><button onClick={() => router.push("/contact")}>Contact</button></li>
         </ul>
       )}
     </nav>

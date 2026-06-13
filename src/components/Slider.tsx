@@ -3,14 +3,14 @@ import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 
 const images = [
-  { src: "/imgs/1.jpeg", name: "Neha Gupta", role: "Marketing Manager" },
-  { src: "/imgs/2.jpeg", name: "Rahul Sharma", role: "Sr Tech" },
-  { src: "/imgs/3.jpeg", name: "Vikram Singh", role: "Jr Tech" },
-  { src: "/imgs/4.jpeg", name: "Karan Malhotra", role: "Sr Marketing Manager" },
-  { src: "/imgs/5.jpeg", name: "Priyanjali S", role: "Marketing Manager" },
-  { src: "/imgs/6.jpeg", name: "Priya Gupta", role: "Marketing Executive" },
-  { src: "/imgs/7.jpeg", name: "Nitika Agarwal", role: "Sr Legal Advisor" },
-  { src: "/imgs/8.jpeg", name: "Arjun Mehta", role: "Head of Tech" },
+  { src: "/imgs/111.jpeg", name: "Neha Gupta", role: "Marketing Manager" },
+  { src: "/imgs/777.jpeg", name: "Rahul Sharma", role: "Sr Tech" },
+  { src: "/imgs/999.jpeg", name: "Tarun Singh", role: "Jr Tech" },
+  { src: "/imgs/222.jpeg", name: "Kirti Malhotra", role: "Sr Marketing Manager" },
+  { src: "/imgs/888.jpeg", name: "Parth S", role: "Marketing Manager" },
+  { src: "/imgs/444.jpeg", name: "Priya Gupta", role: "Marketing Executive" },
+  { src: "/imgs/666.jpeg", name: "Nitika Agarwal", role: "Sr Legal Advisor" },
+  { src: "/imgs/555.jpeg", name: "Arjun Mehta", role: "Head of Tech" },
 ];
 
 const Slider = () => {

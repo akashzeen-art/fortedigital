@@ -192,8 +192,12 @@ const Hero = () => {
       ref={containerRef}
       className="relative z-[999] bg-black h-screen text-white flex flex-col items-center justify-center gap-2 md:gap-8 overflow-hidden px-4"
     >
+      <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none">
+        <source src="https://vz-d9579dc9-1fa.b-cdn.net/928f7c1c-cd72-46e6-8fba-9bd3acd08ef6/play_480p.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-black/60 z-[1] pointer-events-none" />
       {/* First block */}
-      <div className="md:ml-[-10%] lg:ml-[-30%] text-center md:text-left flex flex-col-reverse md:flex-row gap-5 items-center">
+      <div className="relative z-[2] md:ml-[-10%] lg:ml-[-30%] text-center md:text-left flex flex-col-reverse md:flex-row gap-5 items-center">
         <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-aboreto whitespace-nowrap">
           {"FORTE".split("").map((char, ci) => (
             <span
@@ -218,7 +222,7 @@ const Hero = () => {
       </div>
 
       {/* Second block */}
-      <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-aboreto text-gray-400 whitespace-nowrap">
+      <h1 className="relative z-[2] text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-aboreto text-gray-400 whitespace-nowrap">
         {"DIGITAL".split("").map((char, ci) => (
           <span
             key={ci}
@@ -230,7 +234,7 @@ const Hero = () => {
         ))}
       </h1>
       {/* Third block */}
-      <div className="md:ml-[15%] lg:ml-[40%] flex flex-col-reverse md:flex-row items-center gap-5">
+      <div className="relative z-[2] md:ml-[15%] lg:ml-[40%] flex flex-col-reverse md:flex-row items-center gap-5">
         <p
           ref={(el) => {
             if (el && !pRefs.current.includes(el)) {

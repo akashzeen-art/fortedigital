@@ -13,7 +13,7 @@ const services: Service[] = [
       "Experience the perfect blend of global cinema, Bollywood magic, and lifestyle excellence—bringing entertainment, culture, and inspiration together in one destination.",
     heading: "Where Hollywood Meets Bollywood & Lifestyle Entertainment",
     body: "Step into a world of limitless entertainment with our all-in-one OTT platform, featuring the finest collection of Hollywood hits, Bollywood blockbusters, exclusive originals, and premium lifestyle content. Whether you're a movie enthusiast, series binge-watcher, or someone seeking inspiration for modern living, our platform delivers a seamless entertainment experience for every audience.\n\nDiscover the latest Hollywood releases, iconic Bollywood favorites, gripping web series, and engaging lifestyle programming covering travel, fashion, food, wellness, fitness, luxury, and culture. With fresh content added regularly, there's always something new to watch, explore, and enjoy.",
-    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/942776df-ec8f-4eb1-8841-30e3d6230502/play_480p.mp4" },
+    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/35a6fd82-8d77-4dec-adeb-6389df038329/play_480p.mp4" },
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const services: Service[] = [
     subDescription: "Unlock the Secrets of Your Stars",
     heading: "Discover the Power of the Cosmos",
     body: "Discover the power of astrology and gain deeper insights into your life, relationships, career, health, and future through our comprehensive astrology platform. Combining ancient wisdom with modern technology, we bring personalized astrological guidance directly to your fingertips.\n\nWhether you're seeking daily guidance, exploring your birth chart, checking compatibility, or consulting experienced astrologers, our platform offers trusted insights to help you make informed decisions and navigate life's journey with confidence.\n\nExplore, understand, and embrace the cosmic forces shaping your life with trusted astrological insights and expert guidance.",
-    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/cee77080-6ee6-42f1-a5b0-103a1c0b8f58/play_480p.mp4" },
+    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/e8effc3f-32db-4d11-a49f-5edca1014e17/play_480p.mp4" },
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const services: Service[] = [
       "SuitX is a unified digital lifestyle bundle—combining security, connectivity, and entertainment into one powerful subscription.",
     heading: "What SuitX Offers",
     body: "SuitX is a bundled digital subscription service that combines essential utilities and entertainment into a single, seamless platform designed for today's always-connected users.\n\nIt brings together VPN security, Wi-Fi optimization, device protection, premium content, and gaming—eliminating the need for multiple apps and subscriptions.\n\n• Secure VPN Access — Ensures private, encrypted browsing with unrestricted access to global content.\n\n• Wi-Fi Extender / Booster — Enhances internet speed, coverage, and stability for a smoother online experience.\n\n• Advanced Anti-Virus Protection — Safeguards devices against malware, phishing, and cyber threats in real time.\n\n• Video-on-Demand (VOD) — Access to a curated library of movies, shows, and digital content.\n\n• Unlimited HTML5 Gaming — Instant, no-download gaming across multiple genres—accessible anytime, anywhere.\n\nSuitX simplifies the digital lifestyle: one subscription → multiple services, cost efficiency vs standalone apps, seamless access across devices, optimized for telecom bundling & DCB billing.",
-    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/e0de7949-b546-437a-a0a8-16a07d2c1960/play_480p.mp4" },
+    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/8f0872b6-5052-452d-8534-dd8e875eeae6/play_480p.mp4" },
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const services: Service[] = [
       "Our mVAS portfolio delivers scalable, revenue-generating digital services through partnerships with 30+ mobile operators across 17 countries in Asia, the Middle East, Africa, Europe, and Latin America.",
     heading: "Core Service Offerings",
     body: "Using AI personalization, cloud-native platforms, carrier billing, analytics, APIs, and 5G-ready technologies, we help operators increase subscriber engagement, retention, and ARPU.\n\nServices are deployed across India, UAE, Saudi Arabia, Qatar, Kuwait, Oman, Bahrain, Egypt, South Africa, Kenya, Nigeria, Sri Lanka, Nepal, and Bangladesh.\n\n1. Gaming and eSports Platforms\n\n2. Lifestyle Services\n• News, Infotainment, and Education services\n• Quizzes & Skill Based Contests\n\n3. Direct Carrier Billing (DCB)\n• Subscription management platforms\n• Mobile wallets and payment integrations\n• One-click and recurring billing solutions\n• Fraud prevention and risk management\n\n4. Digital Advertising & Customer Acquisition\n• Performance Marketing\n• Subscriber Acquisition and Retention programs\n• Real-Time Bidding & Programmatic Advertising\n\nThis ecosystem makes us a trusted partner for telecom operators, content providers, enterprises, and digital brands expanding across emerging and developed markets.",
-    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/605b1439-a1f8-4650-afb2-3742c63c860c/play_480p.mp4" },
+    media: { type: "video", url: "https://vz-d9579dc9-1fa.b-cdn.net/5ba4f94a-5e93-4a7f-868d-bc4c8044df6a/play_480p.mp4" },
   },
 ];
 

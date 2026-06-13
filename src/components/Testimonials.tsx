@@ -5,25 +5,44 @@ import React, { useEffect, useRef } from "react";
 
 const testimonials = [
   {
-    company: "/company/ibm.svg",
-    quote:
-      "Forte Digital transformed our telecom monetization strategy. Their DCB integration was seamless, and the AI-powered engagement products delivered results we had not seen before. A truly performance-driven partner.",
-    name: "Sophia Martinez",
-    role: "Global Brand Director, IBM",
+    quote: "I subscribed primarily for the OTT package and was pleasantly surprised by the variety of content available. The streaming quality is excellent, and having movies, web series, and live entertainment in one place has made it my family's preferred entertainment platform.",
+    name: "Rahul S.",
+    role: "Mumbai",
   },
   {
-    company: "/company/delta.svg",
-    quote:
-      "Working with Forte Digital gave us access to premium MVAS inventory across MEA markets. Their compliance-first approach and real-time tracking gave us full confidence in every campaign we ran together.",
-    name: "James Carter",
-    role: "VP of Customer Experience, Delta",
+    quote: "As someone who travels frequently, a reliable VPN is essential. The service has been fast, secure, and incredibly easy to use. I can access my work and favorite content safely wherever I am.",
+    name: "Arjun M.",
+    role: "Bengaluru",
   },
   {
-    company: "/company/unileaver.svg",
-    quote:
-      "Forte Digital is not just a vendor — they are a strategic growth partner. Their deep telecom expertise and AI product ecosystem helped us unlock new revenue streams and engage users in ways we never imagined.",
-    name: "Mandlina Covachiu",
-    role: "Global Brand Manager, Unilever",
+    quote: "I was initially skeptical about online astrology, but the personalized consultations were insightful and practical. The guidance helped me make important career decisions with greater confidence.",
+    name: "Akash S.",
+    role: "Delhi",
+  },
+  {
+    quote: "The astrology sessions are detailed, professional, and easy to understand. I particularly appreciate the daily insights and personalized recommendations, which have become a part of my routine.",
+    name: "Priya R.",
+    role: "Pune",
+  },
+  {
+    quote: "What I love most is the convenience of having multiple digital services under a single subscription. From streaming my favorite shows to browsing securely with the VPN, everything works seamlessly.",
+    name: "Neha G.",
+    role: "Hyderabad",
+  },
+  {
+    quote: "The platform delivers excellent value for money. Instead of managing multiple subscriptions, I get entertainment, privacy, and lifestyle services in one place. The customer support team has also been responsive whenever needed.",
+    name: "Anonymous",
+    role: "Subscription Bundle",
+  },
+  {
+    quote: "The astrologers are knowledgeable and approachable. The sessions feel personalized rather than generic, and the insights have helped me plan important personal and professional milestones.",
+    name: "Pooja J.",
+    role: "Astrology Service",
+  },
+  {
+    quote: "The VPN performance has been consistently reliable, especially when I'm traveling internationally. Combined with premium entertainment access, it's a service I use every day.",
+    name: "Abhishek P.",
+    role: "VPN + OTT",
   },
 ];
 
@@ -58,6 +77,9 @@ const Testimonials = () => {
     });
     totalWidth -= containerRef.current.offsetWidth;
 
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) return;
+
     gsap.to(slider, {
       x: -totalWidth,
       ease: "none",
@@ -87,17 +109,19 @@ const Testimonials = () => {
 
       {/* horizontal track */}
       <div className="overflow-hidden">
-        <div ref={sliderRef} className="flex h-[80vh]">
+        <div ref={sliderRef} className="flex md:h-[60vh]">
           {testimonials.map((review, idx) => (
             <div
               key={idx}
-              className="testimonial shrink-0 w-screen md:w-[60vw] flex flex-col justify-center p-2 md:p-8"
+              className="testimonial shrink-0 w-[90vw] md:w-[60vw] flex flex-col justify-start pt-0 p-6 pr-10 md:p-12 border-r border-gray-200"
             >
-
-              <p className="text-lg sm:text-xl md:text-3xl font-medium leading-snug mb-6  pr-4 sm:pr-16">
+              <p className="text-base sm:text-lg md:text-2xl font-medium leading-relaxed mb-4">
                 &ldquo;{review.quote}&rdquo;
               </p>
-
+              <div className="mt-2">
+                <p className="text-base font-semibold text-black">{review.name}</p>
+                <p className="text-sm text-gray-500">{review.role}</p>
+              </div>
             </div>
           ))}
         </div>

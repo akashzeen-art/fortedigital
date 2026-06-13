@@ -21,6 +21,17 @@ const Loader = () => {
   const loaderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const navEntry = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming;
+    const isReload = navEntry?.type === "reload";
+    if (!isReload) {
+      setDone(true);
+      return;
+    }
+    // On reload, clear session so it shows again
+    sessionStorage.removeItem("visited");
+  }, []);
+
+  useEffect(() => {
     if (index < words.length - 1) {
       const interval = setInterval(() => {
         setFade(false); // fade out
