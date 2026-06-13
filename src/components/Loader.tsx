@@ -23,12 +23,12 @@ const Loader = () => {
   useEffect(() => {
     const navEntry = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming;
     const isReload = navEntry?.type === "reload";
-    if (!isReload) {
+    const isFirstVisit = !sessionStorage.getItem("loaderShown");
+    if (!isReload && !isFirstVisit) {
       setDone(true);
       return;
     }
-    // On reload, clear session so it shows again
-    sessionStorage.removeItem("visited");
+    sessionStorage.setItem("loaderShown", "1");
   }, []);
 
   useEffect(() => {
