@@ -84,7 +84,7 @@ const Achievements: React.FC = () => {
           </p>
         </div>
         <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-          {["Zain Group", "Digicel Group", "Ooredoo Group", "Amazon Web Services", "Hostinger", "Etisalat", "Hutch", "PayU", "NextGen", "2000 Charge", "One Click", "HDFC", "ICICI", "Traffic Company", "Propellor Ads", "Golden Goose", "Google India", "Meta Business", "TeleCMI", "Zoho Business", "Epic Company", "WT Event", "IFX", "IAMAI"].map((partner, idx) => (
+          {["Zain Group", "Digicel Group", "Ooredoo Group", "Amazon Web Services", "Hostinger", "Etisalat", "Hutch", "PayU", "NextGen", "2000 Charge", "One Click", "HDFC", "ICICI", "Traffic Company", "Propellor Ads", "Golden Goose", "Google India", "Meta Business", "TeleCMI", "Zoho Business", "Epic Company", "Duns and Bradstreet ", "IFX", "IAMAI"].map((partner, idx) => (
             <span key={idx} className="achievements-text text-sm font-medium border border-gray-300 rounded-full px-4 py-2 text-center">
               {partner}
             </span>
